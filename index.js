@@ -49,7 +49,7 @@ const headers = {
 }
 
 const scrape = () => {
-    for (let pageNumber = 0; pageNumber < 1000; pageNumber += 10) {
+    for (let pageNumber =0; pageNumber < 1000; pageNumber += 10) {
         const url = `https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Javascript%2BDeveloper&location=Bengaluru%2C%2BKarnataka%2C%2BIndia&geoId=105214831&trk=public_jobs_jobs-search-bar_search-submit&start=${pageNumber}`
 
         new Promise((resolve) => setTimeout(resolve, 5000)).then(() => {
